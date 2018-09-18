@@ -1,0 +1,137 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
+
+% For mathematical symbols
+\usepackage{amsmath}
+\usepackage{fontawesome}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+% \geometry{reset,scale=0.92}
+
+% Set applicant's personal data for header
+\name{Satish Palaniappan \linebreak {\small \faPhone \space \href{tel:15555555555}{+1 (412) 499-1316}}}
+\address{\href{https://goo.gl/maps/76fXKj7X13x}{3215 N.Charles Street, Apt. 409 \linebreak Baltimore, MD 21218.}}
+\webpage{}
+\contacts{\faEnvelope \space  \href{mailto:spalani2@cs.jhu.edu}{spalani2@cs.jhu.edu}  \linebreak \faLinkedin \space \href{https://www.linkedin.com/in/satishpalaniappan}{/in/satishpalaniappan}\linebreak}
+\github{\faGithub \space \href{https://github.com/tpsatish95}{/tpsatish95}}
+
+
+\begin{document}
+
+	% Print the header
+	\makeheader
+	
+	% Print the content
+
+\begin{cvsection}{Education}
+		\begin{cvsubsection}{Masters in Computer Science}{Johns Hopkins University}{May 2020 (Expected)}
+			\begin{itemize}
+				\item Course Assistant for Object-Oriented Software Engineering
+				\item \textbf{Coursework:} Machine Learning: Deep Learning, Probabilistic Models of the Visual Cortex, Neuro Data Design.
+			\end{itemize}
+		\end{cvsubsection}
+		\begin{cvsubsection}{Bachelors in Computer Science}{Anna University}{May 2016}
+			\begin{itemize}
+				\item \textbf{Thesis:} \href{https://github.com/tpsatish95/image-captioning}{\color{blue!70}{Automated Scenario Description for Images}} (built an image captioning algorithm using deep learning)
+				\item \textbf{Scores:} CGPA: 8.56/10, GRE: 324/340 (Quant: 169/170), TOEFL: 116/120
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+
+% 	\begin{cvsection}{Employment / Industry Experience}
+	\begin{cvsection}{Experience}
+		\begin{cvsubsection}{Software Engineer}{Qube Cinema Technologies}{Jun 2016 – May 2018}
+			\textit{iCount, Dispatcher \& Theatre-sync Bot} \hfill \textit{Manager: Rajesh Ramachandran (CTO)}
+			\begin{itemize}
+            \item Designed and developed a scalable viewer-demographics mining engine, using Convolutional Neural Networks, that can extract information such as count, age, and gender of the movie watchers from low-light images of a theatre's auditorium. The resulting deep-learned model had an accuracy of 99\%.
+            \item Architected and built a real-time resource allocation and optimization algorithm for making logistical business decisions intelligently and maximizing profits, based on Minimum Cost Flow (Transportation) Problem and Pruned Search Trees.
+            \item Developed a bot for automatically syncing theatre databases across the globe, into one unified format, using Word2Vec.
+			\end{itemize}
+		\end{cvsubsection}
+
+% 	\end{cvsection}
+
+% \begin{cvsection}{Research Experience}
+		\begin{cvsubsection}{Research Assistant}{Institute of Mathematical Sciences}{Dec 2015 - Dec 2017}
+		    \textit{\href{https://github.com/tpsatish95/indus-script-ocr}{{\color{blue!70}{Optical Character Recognition on Indus Scripts}}}} \hfill \textit{Advisor: Prof. Ronojoy Adhikari}
+			\begin{itemize}
+				\item Architected and implemented a deep-learned \href{https://www.youtube.com/watch?v=qPF1oR9yMNY}{\color{blue!70}{Optical Character Recognition engine}}, that can recognize the 417+ Indus script symbols, from images of ancient Harappan civilization artifacts. This was built based on GoogLeNet, Transfer Learning, and Selective Search, and it classifies the most frequent symbol - the Jar sign, with an accuracy of 92\%.
+				\item Published this work as a research paper titled \href{https://arxiv.org/pdf/1702.00523.pdf}{\color{blue!70}{"Deep Learning the Indus Script", arXiv:1702.00523v1}}.
+				\item \textbf{Media Coverage:} \href{https://www.theverge.com/2017/1/25/14371450/indus-valley-civilization-ancient-seals-symbols-language-algorithms-ai\#EQQA6r}{{\color{blue!70}{\textit{The Verge}}}}, \href{http://www.thehindu.com/sci-tech/science/chennai-team-taps-ai-to-read-indus-script/article17448690.ece}{{\color{blue!70}{\textit{The Hindu}}}}, \href{http://timesofindia.indiatimes.com/city/chennai/app-may-help-decipher-indus-valley-symbols/articleshow/57281369.cms}{{\color{blue!70}{\textit{Times of India}}}}, and \href{http://www.sbs.com.au/yourlanguage/tamil/en/content/app-decipher-ancient-symbols?language=en}{{\color{blue!70}{\textit{SBS Radio - Australia}}}}.
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Data Scientist - Intern}{Serendio Inc.}{May 2015 - Jul 2015}
+		    \textit{DisKoveror - Text Analytics} \hfill \textit{Manager: Ravi Condamoor (CEO)}
+			\begin{itemize}
+            	\item Implemented a \href{https://github.com/tpsatish95/Universal-MultiDomain-Sentiment-Classifier}{\color{blue!70}{universal multi-domain sentiment scorer}} for text, that supports 36 domains and has an accuracy of 90\%.
+                \item Engineered a \href{https://github.com/tpsatish95/Topic-Modeling-Social-Network-Text-Data}{\color{blue!70}{topic modeling algorithm}} using hierarchical K-Means and semantic word clusters, with an accuracy of 80\%.
+                \item Designed an \href{https://github.com/tpsatish95/SocialTextFilter}{\color{blue!70}{internet-slang text parser}} that normalizes 6 different artifacts ranging from acronyms to emoticons.
+                \item Serendio's Campus Ambassador at Sri Sivasubramaniya Nadar College of Engg. (SSN CE, affiliated to Anna University).
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Research Intern}{Carnegie Mellon University}{Nov 2014 - Dec 2014}
+		    \textit{\href{https://github.com/tpsatish95/emotion-detection-from-text}{\color{blue!70}{Text-based Emotion Recognition System}}} \hfill \textit{Advisors: Prof. Bhiksha Raj \& Prof. Rita Singh}
+			\begin{itemize}
+				\item Built a classification model for assigning emotion labels to text data, using histograms built over Word2Vec word/phrase clusters. This model can classify the 7 basic emotions, with an accuracy of 90.9\%.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Projects}
+		\begin{cvsubsection}{}{}{}
+			\begin{itemize}
+				\item \textbf{\href{https://www.youtube.com/watch?v=iWw4_Ub2lPw&feature=youtu.be}{\color{blue!70}{Distributed Panorama Construction of High-Resolution UAV Imagery Using Public Compute Nodes}}}: This was developed for the Indian Space Research Organization as a part of the \href{https://www.facebook.com/gtuoffice/videos/1786668221397028/?t=8798}{{\color{blue!70}{Smart India Hackathon 2018}}}. Our team won the 1\textsuperscript{st} place and a cash award of Rs.1,00,000, in this nation-wide hackathon. This was covered by \href{https://www.thehindu.com/todays-paper/tp-national/tp-tamilnadu/5-teams-from-ssn-college-win-prizes/article23461319.ece}{{\color{blue!70}{\textit{The Hindu}}}} and \href{https://timesofindia.indiatimes.com/city/ahmedabad/six-winners-emerge-from-smart-india-hackathon/articleshow/63561717.cms?utm_source=whatsapp&utm_medium=social&utm_campaign=TOIMobile}{{\color{blue!70}{\textit{Times of India}}}}.
+				\item \textbf{\href{https://www.youtube.com/watch?v=O-L_uSHqQvQ}{\color{blue!70}{Universally Compatible and Accessible, Software Controlled, Expandable Home Automation System, for Energy Conservation and the Differently-Abled}}}: This \href{https://github.com/tpsatish95/home-automation-system}{\color{blue!70}{research project}} was funded by the SSN Innovation Center and published as a paper titled: \href{http://research.ijcaonline.org/volume116/number11/pxc3902601.pdf}{\color{blue!70}{"Home Automation Systems - A Study"}} in IJCA (\href{https://scholar.google.co.in/citations?user=gNr8v84AAAAJ&hl=en&oi=ao}{\color{blue!70}{cited 35 times}}). An Indian patent has also been filed.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Awards \& Leadership}
+		\begin{cvsubsection}{}{}{}
+			\begin{itemize}
+				\item \textbf{Merit Scholarship} (Full) for Excellence in Academics, $1^{st}$ Year, worth Rs.105,000, SSN CE.
+                \item \textbf{Microsoft Research} certified, for proficiency in "Design and Analysis of Algorithms".
+                \item \textbf{Industry Mentor} for 2 consecutive years at the Smart India Hackathon (world's largest), \textbf{Government of India}.
+                \item \textbf{Chairman} (2015-16), \textbf{Treasurer \& Tech Lead} (2014-15), Association for Computing Machinery (\textbf{ACM}), SSN CE.
+                \begin{itemize}
+                \item \textbf{Outstanding Student Organizer} Award (2016), ACM Student Chapter, SSN CE.
+                \end{itemize}
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Skills}
+		\begin{cvsubsection}{}{}{}
+			\begin{itemize}
+				\item \textbf{Languages:} Python, Java, C, C++, R, VB.Net
+				\item \textbf{Others:} \textsc{Caffe, TensorFlow, Keras, OpenCV}, Scikit-Learn, Gensim, NLTK, Flask, AWS, Git, Docker, Linux, Android.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+\end{document}
